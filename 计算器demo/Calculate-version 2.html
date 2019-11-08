@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style type="text/css">
+        * {
+            border:none;
+            font-family:'Open Sans',sans-serif;
+            margin:0; 
+            padding:0;
+        }
+        h1 {
+            color:black;
+            font-size: 40px;
+            margin-top:20px;//盒子之间的空隙
+            padding-top:30px;//内容和边框之间的空隙
+            display:block;
+            text-align:center;
+            text-decoration:none;
+        }
+        form {
+            background-color:white;
+            box-shadow:4px 4px lightgrey;
+            margin:40px auto;
+            padding: 40px 0 30px 40px;
+            width:300px;
+        }
+        .btn {
+            outline:none;
+            cursor:pointer;
+            font-size:20px;
+            height:45px;
+            margin:5px 0 5px 10px;
+            width:45px;
+        }
+        .btn:first_child {
+            margin:5px 0 5px 10px;
+        }
+        .btn, #show, form {
+            border-radius:20px;
+        }
+        #show{
+            outline:none;
+            background-color:#98d1dc;
+            box-shadow: inset 6px 6px 0px #3facc0;
+            color:#dededc;
+            font-size:20px;
+            height:47px;
+            text-align:right;
+            width:115px;
+            padding-right:10px;
+            margin-left:5px;
+        }
+        .numbers{
+            background-color:lightgrey;
+            box-shadow:0 5px grey;
+            color:black;
+        }
+        .numbers:active{
+            box-shadow:0 2px grey;
+        }
+        .operator{
+            background-color:lightgrey;
+            box-shadow:0 5px grey;
+            color:black;
+        }
+        .operator:active{
+            box-shadow:0 2px grey;
+        }
+         .other{
+            background-color:lightgrey;
+            box-shadow:0 5px grey;
+            color:black;
+        }
+        .other:active{
+            box-shadow:0 2px grey;
+        }
+    </style>
+    <body>
+        <h1>Judy's Calculator</h1>
+        <form>
+            <input id="clear" type="button" class ="btn other" value="C">
+            <input id="delete" type="button" class ="btn other" value="D">
+            <input type="text" id="show">
+            <br>
+            <input type="button" class ="btn numbers" value="7" onclick="get(this.value);">
+            <input type="button" class ="btn numbers" value="8" onclick="get(this.value);">
+            <input type="button" class ="btn numbers" value="9" onclick="get(this.value);">
+            <input type="button" class ="btn operator" value="+" onclick="get(this.value);">
+            <br>
+            <input type="button" class ="btn numbers" value="4" onclick="get(this.value);">
+            <input type="button" class ="btn numbers" value="5" onclick="get(this.value);">
+            <input type="button" class ="btn numbers" value="6" onclick="get(this.value);">
+            <input type="button" class ="btn operator" value="-" onclick="get(this.value);">
+            <br>
+            <input type="button" class ="btn numbers" value="1" onclick="get(this.value);">
+            <input type="button" class ="btn numbers" value="2" onclick="get(this.value);">
+            <input type="button" class ="btn numbers" value="3" onclick="get(this.value);">
+            <input type="button" class ="btn operator" value="*" onclick="get(this.value);">
+            <br>
+            <input type="button" class ="btn numbers" value="0" onclick="get(this.value);">
+            <input type="button" class ="btn other" value="." onclick="get(this.value);">
+            <input type="button" class ="btn operator" value="/" onclick="get(this.value);">
+            <input id="cal" type="button" class ="btn other" value="=">
+            <br>
+        </form>
+        <p id="time" align="center"></p>
+    </body>
+</html>
