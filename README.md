@@ -31,7 +31,7 @@ t.add(3)
 t.print()      // 升序输出，[2, 3, 4]
 t.remove(2)    // [3, 4]
 ```
-1.使用typescript 编写，定义各数据类型Type
+  1.使用typescript 编写，定义各数据类型Type
 
 [composition-api]:https://github.com/vuejs/composition-api
 [github_search]:https://github.com/search?q=git
