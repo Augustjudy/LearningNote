@@ -18,6 +18,7 @@
 
 #### 3. 实现一个二叉树，使插入、查询、删除的时间复杂度为O(logn)
   1.使用typescript 编写，定义各数据类型Type
+
 ```javascript
 class Tree {
 // implement your code
