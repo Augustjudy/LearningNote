@@ -17,6 +17,7 @@
   2. 采用html、css、原生javascript实现上图效果
 
 #### 3. 实现一个二叉树，使插入、查询、删除的时间复杂度为O(logn)
+  1.使用typescript 编写，定义各数据类型Type
 ```javascript
 class Tree {
 // implement your code
@@ -31,7 +32,6 @@ t.add(3)
 t.print()      // 升序输出，[2, 3, 4]
 t.remove(2)    // [3, 4]
 ```
-  1.使用typescript 编写，定义各数据类型Type
 
 [composition-api]:https://github.com/vuejs/composition-api
 [github_search]:https://github.com/search?q=git
